@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C45DB020-7DD1-49B2-8314-2F77A2C4440C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>V_Fit_Fitness_Tracker</RootNamespace>
+    <AssemblyName>V-Fit_Fitness_Tracker</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activities.Designer.cs">
+      <DependentUpon>Activities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivitiesInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivitiesInfo.Designer.cs">
+      <DependentUpon>ActivitiesInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPasswordResetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPasswordResetForm.Designer.cs">
+      <DependentUpon>AdminPasswordResetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRegister.Designer.cs">
+      <DependentUpon>AdminRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRegisterFullControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRegisterFullControl.Designer.cs">
+      <DependentUpon>AdminRegisterFullControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Encapsulation.cs" />
+    <Compile Include="Admin_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Home.Designer.cs">
+      <DependentUpon>Admin_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clubmemberlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clubmemberlogin.Designer.cs">
+      <DependentUpon>Clubmemberlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClubmemberRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClubmemberRegister.Designer.cs">
+      <DependentUpon>ClubmemberRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClubMemberRegisterFullControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClubMemberRegisterFullControl.Designer.cs">
+      <DependentUpon>ClubMemberRegisterFullControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClubMemberRegisterMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClubMemberRegisterMember.Designer.cs">
+      <DependentUpon>ClubMemberRegisterMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clubmember_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clubmember_Home.Designer.cs">
+      <DependentUpon>Clubmember_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FitnessTrackerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FitnessTrackerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GoalSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoalSetting.Designer.cs">
+      <DependentUpon>GoalSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Introwelcomeform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Introwelcomeform.Designer.cs">
+      <DependentUpon>Introwelcomeform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordResetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordResetForm.Designer.cs">
+      <DependentUpon>PasswordResetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressInformation.Designer.cs">
+      <DependentUpon>ProgressInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Activities.resx">
+      <DependentUpon>Activities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivitiesInfo.resx">
+      <DependentUpon>ActivitiesInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPasswordResetForm.resx">
+      <DependentUpon>AdminPasswordResetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRegister.resx">
+      <DependentUpon>AdminRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRegisterFullControl.resx">
+      <DependentUpon>AdminRegisterFullControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Home.resx">
+      <DependentUpon>Admin_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clubmemberlogin.resx">
+      <DependentUpon>Clubmemberlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClubmemberRegister.resx">
+      <DependentUpon>ClubmemberRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClubMemberRegisterFullControl.resx">
+      <DependentUpon>ClubMemberRegisterFullControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClubMemberRegisterMember.resx">
+      <DependentUpon>ClubMemberRegisterMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clubmember_Home.resx">
+      <DependentUpon>Clubmember_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoalSetting.resx">
+      <DependentUpon>GoalSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Introwelcomeform.resx">
+      <DependentUpon>Introwelcomeform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordResetForm.resx">
+      <DependentUpon>PasswordResetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressInformation.resx">
+      <DependentUpon>ProgressInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="FitnessTrackerDataSet.xsc">
+      <DependentUpon>FitnessTrackerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FitnessTrackerDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FitnessTrackerDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FitnessTrackerDataSet.xss">
+      <DependentUpon>FitnessTrackerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fitness background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fitness background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fitness bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fittnesslogoicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueemailicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluepasswordicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trainerlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newmemberlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trainerlogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trainerlogo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newmemberlogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fittnesslogoicon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fittnesslogoicon11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fittnesslogoicon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fittnesslogoicon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trainerlogo11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newmemberlogo11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fittnesslogoicon4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fittnesslogoicon5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fittnesslogoicon6.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
